@@ -95,14 +95,14 @@ def takeinput():
 appid = 'W4AWY2-976YP965PV'
 client =  wolframalpha.Client(appid)
 print(appid)
-
+detect_emotion()
 # spokenapi = r"http://api.wolframalpha.com/v1/spoken?appid={}&i=How+far+is+Los+Angeles+from+New+York%3f"
 spokenapi = r"http://api.wolframalpha.com/v1/spoken?appid={0}&i=".format(appid)
 start = time.time()
 while True:
-    curr = time.time()
-    if int(curr - start)%5 == 0:
-        detect_emotion()
+    # curr = time.time()
+    # if int(curr - start)%5 == 0:
+    #     detect_emotion()
     query = input("Enter Your Query: ").lower()
     try:
         res = client.query(query)
