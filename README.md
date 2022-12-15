@@ -1,5 +1,5 @@
 
-# <E-we>-2022 
+# E-we 2022 
 
 A brief description of what this project does and who it's for
 
